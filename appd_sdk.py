@@ -183,8 +183,8 @@ ffibuilder.cdef("""
     void appd_sdk_term();
 """)
 
-# This describes the extension module "_pi_cffi" to produce.
-ffibuilder.set_source("_pi_cffi",
+# This describes the extension module "_appd_cffi" to produce.
+ffibuilder.set_source("_appd_cffi",
 """
      #include "appdynamics.h"   // the C header of the library
 """,

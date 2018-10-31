@@ -8,7 +8,7 @@
 #
 ################################################################################
 
-from _pi_cffi import ffi,lib
+from _appd_cffi import ffi,lib
 import time
 import random
 import requests
@@ -16,7 +16,6 @@ import requests
 # This function connects the SDK to the AppD controller. App/tier/node name and the
 # controller connection details need to be set here
 def connect_to_appd():
-    lib.appd_config_init()
     appdConf = lib.appd_config_init()
     lib.appd_config_set_app_name(appdConf,"")
     lib.appd_config_set_tier_name(appdConf,"")
