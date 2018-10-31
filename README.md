@@ -1,8 +1,8 @@
-#Python/PyPy Bindings for the AppDynamics C SDK
+# Python/PyPy Bindings for the AppDynamics C SDK
 
 AppDynamics provides a SDK to instrument C/C++ applications through code decoration. This Python script creates a module with bindings from Python into this SDK. The primary use case this address is insturmenting PyPy code.
 
-##Prereqs
+## Prereqs
 
 This uses [CFFI](https://cffi.readthedocs.io/en/latest/goals.html) to create the bindings. This can be installed using pip.
 
@@ -12,7 +12,7 @@ This code has currently been tested using PyPy 5.0.1 (Python 2.7.10) on CentOS 7
 
 [AppDynamics C SDK](https://docs.appdynamics.com/pages/viewpage.action?pageId=45486535) 4.5.1 is also required on the Library Path.
 
-##Module Creation
+## Module Creation
 
 To create the module with the bindings, run the `appd_sdk.py` script e.g.
 
@@ -20,7 +20,7 @@ To create the module with the bindings, run the `appd_sdk.py` script e.g.
 
 This will produce complied Python code and binary libary for the bindings.
 
-##Usage
+## Usage
 
 The 'example.py' script shows a basic usage of the module, to import into a Python script:
 
